@@ -5,6 +5,7 @@
  */
 export function urlParse() {
   let url = window.location.search;
+  console.log('###url:' + window.location);
   let obj = {};
   let reg = /[?&][^?&]+=[^?&]+/g;
   let arr = url.match(reg);
